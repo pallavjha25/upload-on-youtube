@@ -128,9 +128,13 @@ class YouTubeUploader:
                 creds.refresh(Request())
             else:
                 if not os.path.exists(self.credentials_file):
+                    current_dir = os.getcwd()
+                    print(f"Credentials file not found at: {os.path.abspath(self.credentials_file)}")
+                    print(f"Current working directory: {current_dir}")
+                    print("Please ensure credentials.json is in the same directory as this script, check file name or extenstion.")
                     raise FileNotFoundError(
                         f"Credentials file not found: {self.credentials_file}\n"
-                        "Please download it from Google Cloud Console"
+                        "Please download it from Google Cloud Console and place it in the current directory"
                     )
                 
                 flow = InstalledAppFlow.from_client_secrets_file(
