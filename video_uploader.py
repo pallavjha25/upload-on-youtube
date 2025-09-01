@@ -5,13 +5,15 @@ from pathlib import Path
 from typing import List, Set
 from dataclasses import dataclass
 from abc import ABC, abstractmethod
-
+# 30th Aug 2025 7:30 pm - Group Obectives and status updates
+# 30th Aug 2025 12 pm - Group Obectives and status updates
+# C:\Users\ancha\Documents\Zoom
 # YouTube API imports
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaFileUpload
 from google.auth.transport.requests import Request
-from google.oauth2.credentials import Credentials
+from google.oauth2.credentials import Credentialsn
 from google_auth_oauthlib.flow import InstalledAppFlow
 
 # Configure logging
@@ -99,8 +101,7 @@ class VideoFileMonitor(FileMonitor):
         """Mark file as processed"""
         file_key = f"{video_file.name}_{video_file.modified_time}"
         self.processed_files.add(file_key)
-
-
+ 
 class YouTubeUploader:
     """Handles YouTube API authentication and video uploads"""
     

@@ -120,6 +120,9 @@ Every time you want to run the program:
 3. **Run** the program: `python video_uploader.py`
 4. **Deactivate** when done: `deactivate`
 
+source venv/bin/activate
+python video_uploader.py
+
 ## Troubleshooting
 
 ### Common Issues
