@@ -7,6 +7,9 @@ from dataclasses import dataclass
 from abc import ABC, abstractmethod
 # 30th Aug 2025 7:30 pm - Group Obectives and status updates
 # 30th Aug 2025 12 pm - Group Obectives and status updates
+# source venv/bin/activate
+# python video_uploader.py
+
 # C:\Users\ancha\Documents\Zoom
 # YouTube API imports
 from googleapiclient.discovery import build
